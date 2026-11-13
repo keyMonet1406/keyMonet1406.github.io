@@ -10,7 +10,7 @@ const SITE = {
     headline: "Notes from studying blockchain security.",
     intro:
       "",
-    github: "keyMonet1406",                     // 깃허브 아이디만. 예: "wonkim"
+    github: "",                     // 깃허브 아이디만. 예: "wonkim"
     email: "",                      // 공개하고 싶을 때만 입력
   },
 
