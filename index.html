@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blockchain security study notes</title>
+<meta name="description" content="Study notes on blockchain security: hack analyses, CTF write-ups, protocol studies and tech notes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a class="handle" href="#top" id="handle">notes</a>
+  <nav aria-label="Sections">
+    <a href="#hacks">Hacks</a>
+    <a href="#ctf">CTF</a>
+    <a href="#protocols">Protocols</a>
+    <a href="#tech">Tech</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <p class="eyebrow" id="eyebrow"></p>
+  <h1 id="headline"></h1>
+  <p class="intro" id="intro"></p>
+  <p class="mono" id="hero-link"></p>
+</section>
+
+<section id="hacks">
+  <div class="head"><span class="num">01</span><h2>Hack analyses</h2></div>
+  <p class="lede">Past incidents taken apart: what the code did, what the attacker did, and what would have stopped it.</p>
+  <div class="cards" id="hacks-list"></div>
+</section>
+
+<section id="ctf">
+  <div class="head"><span class="num">02</span><h2>CTF write-ups</h2></div>
+  <p class="lede">How I solved each challenge and the concept behind it.</p>
+  <ul class="rows" id="ctf-list"></ul>
+</section>
+
+<section id="protocols">
+  <div class="head"><span class="num">03</span><h2>Protocol studies</h2></div>
+  <p class="lede">Well-known protocols read line by line, with notes on why each part is built the way it is.</p>
+  <ul class="rows" id="protocols-list"></ul>
+</section>
+
+<section id="tech">
+  <div class="head"><span class="num">04</span><h2>Tech notes</h2></div>
+  <p class="lede">Cryptography and infrastructure topics, explained the way I wish they had been explained to me.</p>
+  <ul class="rows" id="tech-list"></ul>
+</section>
+</main>
+
+<footer>
+  <span class="muted">Found a mistake? Corrections are welcome.</span>
+  <div class="links" id="footer-links"></div>
+</footer>
+
+</div>
+<script src="content.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
