@@ -5,14 +5,15 @@
 | 파일 | 역할 |
 |---|---|
 | `content.js` | **내용 전부.** 글을 추가할 때 이 파일만 고칩니다. |
-| `index.html` | 페이지 뼈대 |
+| `index.html` | 메인 페이지 (섹션마다 최근 글 3개) |
+| `hacks.html`, `ctf.html`, `protocols.html`, `tech.html` | 섹션별 전체 목록 페이지 |
 | `style.css` | 디자인 |
 | `main.js` | `content.js`를 읽어 화면에 그리는 코드 |
 
 ## 처음 한 번: 배포
 
 1. GitHub에서 이름이 정확히 `<아이디>.github.io`인 **public** 레포를 만듭니다.
-2. 이 폴더의 파일 4개(`index.html`, `style.css`, `content.js`, `main.js`)와 이 `README.md`를 레포 최상단에 올립니다.
+2. 이 폴더의 파일 8개(`index.html`, 섹션 페이지 4개, `style.css`, `content.js`, `main.js`)와 이 `README.md`를 레포 최상단에 올립니다.
 3. 레포 Settings → Pages에서 Source가 `Deploy from a branch`, Branch가 `main` / `(root)`인지 확인합니다.
 4. 1~2분 뒤 `https://<아이디>.github.io`에서 확인합니다.
 
@@ -34,6 +35,7 @@ tech: [
 ],
 ```
 
+- **새 글은 배열 맨 위에** 추가합니다. 메인 페이지에는 위에서부터 3개만 나오고, 나머지는 섹션 페이지에서 보입니다.
 - `url`을 빼면 링크 없이 제목만 표시됩니다.
 - 배열이 비어 있는 섹션에는 "Nothing here yet" 문구가 대신 나옵니다.
 - 해킹 분석 카드의 `severity`는 `"high"`, `"medium"`, `"low"` 중 하나이고 태그 색만 바꿉니다.
